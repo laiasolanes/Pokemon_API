@@ -35,15 +35,6 @@ function drawAsync(url) {
         document.getElementsByTagName('ul')[0].appendChild(aList);
       });
 
-      // // NUMBER PAGINATION
-      // const pageActual = document.createElement('span');
-      // // console.log(pokes.results[pokes.results.length - 1]);
-      // pageActual.innerText = (`pàgina ${(pokes.results.length / 10)} `);
-      // document.getElementById('pokelista').appendChild(pageActual);
-
-      // const pagination = document.createElement('span');
-      // pagination.innerText = `de ${(parseInt(pokes.count / 10))}`;
-      // document.getElementById('pokelista').appendChild(pagination);
     });
 }
 drawAsync(url_loc);

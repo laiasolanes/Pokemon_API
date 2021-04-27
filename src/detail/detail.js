@@ -1,7 +1,6 @@
 function getPokeNamefromUrl() {
   const nameLocation = window.location.search.split('&').find((valueId) => valueId.includes('name='));
   const name = nameLocation.split('=')[1];
-  // console.log(name);
   return name;
 }
 const pokeNamed = getPokeNamefromUrl();
@@ -9,7 +8,6 @@ const pokeNamed = getPokeNamefromUrl();
 function fetchPokeDetails(name) {
   const url = `https://pokeapi.co/api/v2/pokemon/${name}`;
   const fetchResponse = fetch(url);
-
   const jsonResponse = fetchResponse
     .then((response) => response.json());
 
@@ -42,6 +40,7 @@ function drawPokeDetails(pokemon) {
       document.body.appendChild(image);
     }
   }
+  
   const moves = document.createElement('h2');
   moves.innerText = 'Moviments destacats';
   document.body.appendChild(moves);
