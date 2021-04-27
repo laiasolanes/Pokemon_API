@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body {
+    background: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Potta One', cursive;
+    letter-spacing: 2px;
+   
+}
+.logo {
+    width: 300px;
+    margin: 50px;
+    /* -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out; */
+    
+}
+
+.logo:hover {
+    /* -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); */
+    animation: move-logo 1s linear infinite;
+}
+@keyframes move-logo {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0);
+      }
+  }

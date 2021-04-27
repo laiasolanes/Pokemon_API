@@ -1,0 +1,27 @@
+h1 {
+    text-shadow: -3px 1px  #ffffff; 
+}
+
+
+.image--move {
+    transition: all .5s;
+}
+.image--move:hover {
+    transform: scale(1.1);
+}
+
+.image--small--move {
+    transition: all .3s;
+}
+.image--small--move:hover {
+    transform: scale(1.5);
+}
+table {
+    margin: 30px auto 100px;
+}
+table td {
+    border: 1px solid #ffffff;
+    padding: 3px 50px;
+    background: rgba(255,255,255,0.5);
+}
+
